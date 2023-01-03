@@ -22,7 +22,7 @@ export class BookFormComponent implements OnInit {
       this.book.id = p["id"];
     }, error => {
       if (error.status == 404) {
-        this.router.navigate(["/trainee"]);
+        this.router.navigate(["/book"]);
       }
     }
 
