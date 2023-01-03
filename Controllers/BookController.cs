@@ -84,7 +84,7 @@ namespace LibraryWithDB.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTrainee(int? id)
+        public async Task<IActionResult> DeleteBook(int? id)
         {
             var book = await _context.Books.FindAsync(id);
             if (book == null)
